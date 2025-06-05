@@ -9,6 +9,6 @@ jobs:
             - name: Welcome Message
               run: echo "Hello from github actions!!!"
             - name: List files
-              run: ls
-            - name: Read files
-              run: cat README.md
+              run: ls -a
+            # - name: Read files
+            #   run: cat README.md
