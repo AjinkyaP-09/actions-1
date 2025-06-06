@@ -8,18 +8,22 @@ jobs:
         steps:
             - name: Checkout repo
               uses: actions/checkout@v4
-            - name: Install Cowsay
-              run: |
-                sudo apt update
-                sudo apt-get install cowsay -y
-            - name: Execute cowsay
-              run: cowsay -f dragon "I am a Dragon.." >> dragon.txt
+            # - name: Install Cowsay
+            #   run: |
+            #     sudo apt update
+            #     sudo apt-get install cowsay -y
+            # - name: Execute cowsay
+            #   run: cowsay -f dragon "I am a Dragon.." >> dragon.txt
 
-            - name: Test if it is done
-              run: grep -i "dragon" dragon.txt
+            # - name: Test if it is done
+            #   run: grep -i "dragon" dragon.txt
 
-            - name: Read file and list items
+            # - name: Read file and list items
+            #   run: |
+            #     ls -ltra
+            #     cat README.md
+            #     cat dragon.txt
+            - name: Using shell script
               run: |
-                ls -ltra
-                cat README.md
-                cat dragon.txt
+               chmod +x ascii-script.sh
+               ./ascii-script.sh
