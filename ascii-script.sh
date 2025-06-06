@@ -1,8 +1,8 @@
 #/bin/bash
-# sudo apt update
+#sudo apt update
 sudo apt-get install cowsay -y
-cowsay -f dog "I am a dog.." >> dog.txt
-grep -i "dog" dog.txt
+cowsay -f dragon "I am a Dragon.." >> dragon.txt
+grep -i "dragon" dragon.txt
 ls -ltra
 cat README.md
-cat dog.txt
+cat dragon.txt
