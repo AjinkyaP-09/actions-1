@@ -9,8 +9,7 @@ jobs:
             - name: Checkout Repo files
               uses: actions/checkout@v4
             - name: Welcome Message
-              run: echo "Hello from github actions!!!"
-            - name: List files
-              run: ls -a
-            - name: Read files
-              run: cat README.md
+              run: |
+               echo "Hello from github actions!!!"
+               ls -ltra
+               cat README.md
